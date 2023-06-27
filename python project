@@ -1,0 +1,52 @@
+# Import tkinter as tk import tkinter as tk from tkinter import* 
+# creating a new tkinter window master = tk.Tk() # assigning a title 
+master.title("ECE DEPARTMENT INFORMATION") 
+# specifying geomtery for window size master.geometry("600x500") master.resizable(0,0) master.configure(bg='skyblue') # declaring objects for entering data e1 = tk.Entry(master) e2 = tk.Entry(master) e3 = tk.Entry(master) e4 = tk.Entry(master) def display(): 
+    # Varibale to store sections     sections = 0     # 1st year     if e1.get() == "ecea": 
+        # grid method is used for placing         # the widgets at respective positions         # in table like structure . 
+        tk.Label(master, 
+                 text='\nclass coordinator :Mr.K.V.Rama Rao\nno of students = 70\nno of boys = 29\nno of girls = 41\n',bg='skyblue').place(x=50,y=180) 
+ 
+         
+    if e1.get() == "eceb":         tk.Label(master,                  text='\nclass coordinator : Dr.K.Jagadeesh\nno of students = 65\nno of boys = 31\nno of girls = 
+34\n',bg='skyblue').place(x=50,y=180)     if e1.get() == "ecec": 
+        tk.Label(master, text='\nclass coordinator : Mrs.P.Silpa\nno of students = 68\nno of boys = 33\nno of girls = 35\n',bg='skyblue').place(x=50,y=180)             if e1.get() == "ect":         tk.Label(master, 
+                 text='\nclass coordinator : Mrs.B.V.D.Santhi Lakshmi\nno of students = 62\nno of boys = 27\nno of girls = 35\n',bg='skyblue').place(x=50,y=180) 
+             
+    # 2nd year     if e2.get() == "ecea":         tk.Label(master, 
+                 text='\nclass coordinator : Dr.T.V.N.L.Aswini\nno of students = 68\nno of boys = 37\nno of girls = 
+31\n',bg='skyblue').place(x=50,y=180)               if e2.get() == "eceb":         tk.Label(master, 
+                 text='\nclass coordinator : Smt.V.Raddha\nno of students = 65\nno of boys = 31\nno of girls = 
+34\n',bg='skyblue').place(x=50,y=180)           if e2.get() == "ecec":         tk.Label(master, 
+                 text='\nclass coordinator : Sri.Venkanna Babu\nno of students = 67\nno of boys = 29\nno of girls 
+= 38\n',bg='skyblue').place(x=50,y=180)            if e2.get() == "ect":         tk.Label(master, 
+                 text='\nclass coordinator : Sri.D.Sandeep\nno of students = 70\nno of boys = 32\nno of girls = 38\n',bg='skyblue').place(x=50,y=180) 
+  
+         
+    # 3rd year 
+ 
+    if e3.get() == "ecea":         tk.Label(master, 
+                 text='\nclass coordinator : Sri. G. Shankara Bhaskara Rao\nno of students = 70\nno of boys = 31\nno of girls = 39\n',bg='skyblue').place(x=50,y=180) 
+    if e3.get() == "eceb":         tk.Label(master, 
+                 text='\nclass coordinator : Sri.P.V.V.Satyanarayana\nno of students = 69\nno of boys = 29\nno of girls = 40\n',bg='skyblue').place(x=50,y=180)               if e3.get() == "ecec":         tk.Label(master, 
+                 text='\nclass coordinator : Sri.P.Nagaraju\nno of students = 70\nno of boys = 32\nno of girls = 
+38\n',bg='skyblue').place(x=50,y=180)               if e3.get() == "ect":         tk.Label(master, 
+                 text='\nclass coordinator : Ms.Y.Y.S. Manogna\nno of students = 68\nno of boys =28\nno of girls = 40\n',bg='skyblue').place(x=50,y=180) 
+             
+    # 4th year     if e4.get() == "ecea":         tk.Label(master, 
+                 text='\nclass coordinator : Sri P.Gopala Reddy\nno of students = 69\nno of boys = 32\nno of girls 
+= 37\n',bg='skyblue').place(x=50,y=180)                 if e4.get() == "eceb":         tk.Label(master, 
+                 text='\nclass coordinator : Sri .Thota Sreenivas\nno of students = 66\nno of boys = 30\nno of girls 
+= 36\n',bg='skyblue').place(x=50,y=180)                 if e4.get() == "ecec":         tk.Label(master, 
+                 text='\nclass coordinator : Sri S.Harsha Vardhan\nno of students = 70\nno of boys = 32\nno of girls = 38\n',bg='skyblue').place(x=50,y=180) 
+             
+    if e4.get() == "ect":         tk.Label(master, 
+                 text='\nclass coordinator : Dr.T.D.N.S.S.Sarveswara rao\nno of students = 68\nno of boys = 29\nno of girls = 39\n',bg='skyblue').place(x=50,y=180) 
+# labels for serial numbers 
+tk.Label(master, text="S.No",bg='skyblue').grid(row=2, column=0) tk.Label(master, text="1.",bg='skyblue').grid(row=3, column=0) tk.Label(master, text="2.",bg='skyblue').grid(row=4, column=0) tk.Label(master, text="3.",bg='skyblue').grid(row=5, column=0) tk.Label(master, text="4.",bg='skyblue').grid(row=6, column=0) 
+# labels for depatment years 
+tk.Label(master, text="ECE",bg='skyblue').grid(row=2, column=1) tk.Label(master, text="1st year",bg='skyblue').grid(row=3, column=1) tk.Label(master, text="2nd year",bg='skyblue').grid(row=4, column=1) tk.Label(master, text="3rd year",bg='skyblue').grid(row=5, column=1) tk.Label(master, text="4th year",bg='skyblue').grid(row=6, column=1) 
+# label for department sections 
+tk.Label(master, text="SECTION",bg='skyblue').grid(row=2, column=2) e1.grid(row=3, column=2) e2.grid(row=4, column=2) e3.grid(row=5, column=2) e4.grid(row=6, column=2) 
+# button to display all the sections information of ece department 
+button1 = tk.Button(master, text="Enter", bg="yellow", fg="black", command=display) button1.grid(row=9, column=2) master.mainloop()
